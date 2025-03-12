@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Switch } from "@/components/ui/switch";
 
+type CookieType = "essential" | "analytics" | "personalization" | "security";
+
 export default function CookiePolicy() {
   const [cookieSettings, setCookieSettings] = useState({
     essential: true,
@@ -12,7 +14,7 @@ export default function CookiePolicy() {
     security: true,
   });
 
-  const toggleCookieSetting = (type: string) => {
+  const toggleCookieSetting = (type: CookieType) => {
     setCookieSettings((prev) => ({
       ...prev,
       [type]: !prev[type],
