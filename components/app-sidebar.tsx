@@ -21,7 +21,7 @@ const navMain = [
     icon: BrainCircuit,
     isActive: true,
     items: [
-      { title: "Portfolio", url: "/dashboard" },
+      { title: "Portfolio", url: "/dashboard/portfolio" },
       { title: "Services", url: "/dashboard/services" },
     ],
   },
