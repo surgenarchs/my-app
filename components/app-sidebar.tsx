@@ -45,7 +45,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-full shadow-lg border border-green-400" />
           <div className="text-left">
             <span className="text-lg font-semibold">Surgen Archs</span>
-            <span className="block text-sm text-gray-500">Hands-on Solutions</span>
+            <span className="block text-sm text-gray-500">Data-Powered</span>
           </div>
         </SidebarHeader>
       </Link>

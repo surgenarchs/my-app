@@ -22,6 +22,9 @@ import { ModeToggle } from "@/components/dark-light";
 import SidebarOpen from "@/components/sidebarOpen";
 import MobileSidebar from "@/components/mobilebar";
 import { Profile } from "@/components/profile";
+import { SearchIcon } from "@/components/search";
+
+
 
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -88,6 +91,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
           {/* Dark/Light Mode Toggle */}
           <div className="flex items-center">
+           <SearchIcon />
             <Profile />
             <ModeToggle />
           </div>
@@ -97,7 +101,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className="flex">
           <div className="flex-1 h-[87vh] rounded-xl border overflow-y-scroll">
     
-                {children}
+                  {children}
 
             {/* Toast Notifications */}
             <Toaster position="bottom-right" />
